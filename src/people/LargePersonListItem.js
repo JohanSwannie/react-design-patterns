@@ -2,7 +2,7 @@ const LargePersonListItem = ({ person }) => {
   const { name, age, haircolor, hobbies } = person;
   return (
     <>
-      <h3>{name}</h3>
+      <h4>{name}</h4>
       <p>Age: {age} years</p>
       <p>Haircolor: {haircolor}</p>
       <h3>Hobbies:</h3>
