@@ -19,16 +19,23 @@ const ModalBody = styled.div`
   width: 50%;
 `;
 
+const Button = styled.button`
+  width: 10rem;
+  height: 3rem;
+  background-color: navy;
+  color: #fff;
+`;
+
 const Modal = ({ children }) => {
   const [shouldShow, setShouldShow] = useState(false);
 
   return (
     <>
-      <button onClick={() => setShouldShow(true)}>Show Modal</button>
+      <Button onClick={() => setShouldShow(true)}>Show Modal</Button>
       {shouldShow && (
         <ModalBackground onClick={() => setShouldShow(false)}>
           <ModalBody onClick={(e) => e.stopPropagation()}>
-            <button onClick={() => setShouldShow(false)}>Hide Modal</button>
+            <Button onClick={() => setShouldShow(false)}>Hide Modal</Button>
             {children}
           </ModalBody>
         </ModalBackground>
