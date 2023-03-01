@@ -8,7 +8,9 @@ const LargePersonListItem = ({ person }) => {
       <h3>Hobbies:</h3>
       <ul>
         {hobbies.map((hobby) => (
-          <li key={hobby}>{hobby}</li>
+          <li style={{ listStyle: "none" }} key={hobby}>
+            {hobby}
+          </li>
         ))}
       </ul>
     </>
