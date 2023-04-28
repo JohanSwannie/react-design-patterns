@@ -6,7 +6,7 @@ import { SplitScreen } from "./SplitScreen";
 const LeftStyle = styled.h1`
   text-align: center;
   background-color: green;
-  height: 95vh;
+  height: 100vh;
 `;
 
 const MiddleStyle = styled.h1`
@@ -14,13 +14,13 @@ const MiddleStyle = styled.h1`
   color: #fff;
   font-weight: bold;
   background-color: navy;
-  height: 95vh;
+  height: 100vh;
 `;
 
 const RightStyle = styled.h1`
   text-align: center;
   background-color: orange;
-  height: 95vh;
+  height: 100vh;
 `;
 
 const LeftHandComponent = ({ leftHandText }) => {
