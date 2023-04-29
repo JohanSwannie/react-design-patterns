@@ -37,7 +37,7 @@ const RightHandComponent = ({ rightHandText }) => {
 
 function SplitScreenApp() {
   return (
-    <SplitScreen leftWeight={1} middleWeight={2} rightWeight={3}>
+    <SplitScreen leftWeight={2} middleWeight={3} rightWeight={5}>
       <LeftHandComponent leftHandText="Left Pane" />
       <MiddleComponent middleText="Middle Pane" />
       <RightHandComponent rightHandText="Right Pane" />
