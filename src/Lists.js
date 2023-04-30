@@ -1,11 +1,19 @@
 // Lists and List Items
-
+import styled from "styled-components";
 import RegularList from "./RegularList";
 import NumberedList from "./NumberedList";
 import SmallPersonListItem from "./people/SmallPersonListItem";
 import LargePersonListItem from "./people/LargePersonListItem";
 import SmallProductListItem from "./products/SmallProductListItem";
 import LargeProductListItem from "./products/LargeProductListItem";
+
+const Div = styled.div`
+  text-align: center;
+`;
+
+const Heading = styled.h1`
+  text-decoration: underline;
+`;
 
 const people = [
   {
@@ -63,32 +71,32 @@ const products = [
 
 function Lists() {
   return (
-    <div style={{ textAlign: "center" }}>
-      <h1 style={{ textDecoration: "underline" }}>Small Person List Item</h1>
+    <Div>
+      <Heading>Small Person List Item</Heading>
       <RegularList
         items={people}
         resourceName="person"
         itemComponent={SmallPersonListItem}
       />
-      <h1 style={{ textDecoration: "underline" }}>Large Person List Item</h1>
+      <Heading>Large Person List Item</Heading>
       <NumberedList
         items={people}
         resourceName="person"
         itemComponent={LargePersonListItem}
       />
-      <h1 style={{ textDecoration: "underline" }}>Small Product List Item</h1>
+      <Heading>Small Product List Item</Heading>
       <RegularList
         items={products}
         resourceName="product"
         itemComponent={SmallProductListItem}
       />
-      <h1 style={{ textDecoration: "underline" }}>Large Product List Item</h1>
+      <Heading>Large Product List Item</Heading>
       <NumberedList
         items={products}
         resourceName="product"
         itemComponent={LargeProductListItem}
       />
-    </div>
+    </Div>
   );
 }
 
