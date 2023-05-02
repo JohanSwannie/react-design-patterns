@@ -1,4 +1,3 @@
-// Lists and List Items
 import styled from "styled-components";
 import RegularList from "./RegularList";
 import NumberedList from "./NumberedList";
