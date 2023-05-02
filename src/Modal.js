@@ -9,16 +9,16 @@ const ModalBackground = styled.div`
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.35);
 `;
 
 const ModalBody = styled.div`
   background-color: #fff;
-  margin: 10% auto;
+  margin: auto;
   padding: 2rem;
   border: 10px solid #000;
   border-style: double;
-  width: 75%;
+  width: 70%;
 `;
 
 const Button = styled.button`
