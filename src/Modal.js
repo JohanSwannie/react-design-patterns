@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const ModalBackground = styled.div`
   position: fixed;
-  z-index: 1;
+  z-index: 99;
   left: 0;
   top: 0;
   width: 100%;
@@ -15,8 +15,10 @@ const ModalBackground = styled.div`
 const ModalBody = styled.div`
   background-color: #fff;
   margin: 10% auto;
-  padding: 1.3rem;
-  width: 50%;
+  padding: 2rem;
+  border: 10px solid #000;
+  border-style: double;
+  width: 75%;
 `;
 
 const Button = styled.button`
@@ -36,6 +38,8 @@ const Modal = ({ children }) => {
         <ModalBackground onClick={() => setShouldShow(false)}>
           <ModalBody onClick={(e) => e.stopPropagation()}>
             <Button onClick={() => setShouldShow(false)}>Hide Modal</Button>
+            <br />
+            <br />
             {children}
           </ModalBody>
         </ModalBackground>
