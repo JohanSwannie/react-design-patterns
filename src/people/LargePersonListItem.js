@@ -9,8 +9,8 @@ const LargePersonListItem = ({ person }) => {
       <p>Haircolor: {haircolor}</p>
       <h3>Hobbies:</h3>
       <ul>
-        {hobbies.map((hobby, key) => (
-          <Hobbies key={key} hobby={hobby} />
+        {hobbies.map((hobby, index) => (
+          <Hobbies key={index} hobby={hobby} />
         ))}
       </ul>
     </>
